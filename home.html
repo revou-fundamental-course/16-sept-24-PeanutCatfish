@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/gambar/logo.png" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#ourProfile">Our Profile</a></li>
+          <li><a href="#ourPortfolio">Portfolio</a></li>
+          <li><a href="#contactForm">Message Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome">
+        <h1 id="welcomeMessage">Hi, Welcome To Website</h1>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="/video/Video Ikan.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+      </section>
+
+      <!-- Section Our Headquarters -->
+      <section class="headquarters">
+        <h2>Our Headquarter</h2>
+        <div class="location-circles">
+          <div class="location">
+            <div class="circle">
+                <img src="/gambar/jakarta.png" alt="Gambar Jakarta">
+            </div>
+            <p>Jakarta</p>
+          </div>
+          <div class="location">
+            <div class="circle">
+                <img src="/gambar/bogor.png" alt="Gambar Bogor">
+            </div>
+            <p>Bogor</p>
+        </div>
+      </section>
+
+      <!-- Section Our Profile -->
+      <section class="our-profile" id="ourProfile">
+        <h2>Our Profile</h2>
+        <div class="profile-container">
+            <div class="image-container hidden-cover">
+                <img src="/gambar/gambar-our-profile.png" alt="Our Team" />
+            </div>
+            <div class="text-container">
+                <h3>About Us</h3>
+                <p>We envision a world where businesses, like fish in the ocean, 
+                swim together in harmony—creating sustainable, innovative, and
+                impactful solutions that flow through every part of the industry.</p>
+            </div>
+        </div>
+    </section>
+    
+
+       <!-- Section Our Portfolio -->
+        <section class="our-portfolio" id="ourPortfolio">
+            <h2>Our Portfolio</h2>
+            <div class="profile-container">
+                <div class="image-container hidden-cover">
+                    <img src="/gambar/portfolio1.png" alt="Our Team" />
+                </div>
+                <div class="text-container">
+                    <h3>Clownfish Project</h3>
+                    <p>At Clownfish Project, we strive to create a harmonious 
+                        business ecosystem where organizations collaborate like 
+                        clownfish and their anemone partners. Our focus is on 
+                        sustainable solutions that drive growth while protecting 
+                        aquatic biodiversity, empowering companies to thrive 
+                        alongside nature.
+
+                    </p>
+                </div>
+            </div>
+            <div class="profile-container">
+                <div class="image-container hidden-cover">
+                    <img src="/gambar/portfolio2.png" alt="Our Team" />
+                </div>
+                <div class="text-container">
+                    <h3>Blue Fish Project</h3>
+                    <p>Blue Fish Project envisions a 
+                        collaborative business environment where 
+                        companies swim together like blue fish, developing 
+                        innovative strategies for sustainable growth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+      <!-- Section Contact Form -->
+      <section class="contact-form" id="contactForm">
+        <h2 class="bottom">Message Us!</h2>
+        <form id="contactForm">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" required />
+    
+            <label for="birthdate">Tanggal Lahir</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+    
+            <label for="gender">Jenis Kelamin</label>
+            <div class="gender-options">
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="Laki-Laki" required />
+                    <label for="male">Laki-Laki</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="female" name="gender" value="Perempuan" required />
+                    <label for="female">Perempuan</label>
+                </div>
+            </div>
+    
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <!-- Section Form Result -->
+        <div class="form-result">
+            <h3>Your Message</h3>
+            <p id="resultTime"></p>
+            <p id="resultName"></p>
+            <p id="resultBirthdate"></p>
+            <p id="resultGender"></p>
+            <p id="resultMessage"></p>
+        </div>
+    </section>
+    </main>
+    
+    <footer>
+      <p>Created By RevoU</p>
+    </footer>
+
+    
+    <script src="/js/script.js"></script>
+  </body>
+</html>
